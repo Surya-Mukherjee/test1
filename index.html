@@ -7,16 +7,27 @@
    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymo<i class="fa-solid fa-check" style="color: #15b227;"></i>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
+     <div class="nav">
+            <div class="logo">
+                MMMMMM
+            </div>
+            <div class="toggle">
+                <div class="btn-container">
+                    <button id="toggle"><img id="icon" src="./static/sun.png"></button>
+                </div>
+            </div>
+        </div>
     <header>
+       
         <div class="hero">
-            <div class="image-container">
-                <img id="img1"src="images.jpg" alt="cow">
+          
+                <img id="img1"src="./static/images.jpg" alt="cow">
                 <div class="text-overlay"> Cattle & Buffalo Breed Identification App</div>
                 <div  class="txt">AI application for instant and  real-time identification of cattle breeds on the get go.</div>
-            </div>
+            
         </div>
 
     </header>
@@ -25,16 +36,16 @@
               <h1><i class="fa-solid fa-lightbulb"></i>Introduction</h1>
               <p>Empowering farmers to make informed breeding decisions. Our platform simplifies livestock management with real-time insights. Discover smarter ways to enhance productivity every day.</p>
               <div class="img">
-                <img src="cow1.jpg" alt="cow">
+                <img src="./static/cow1.jpg" alt="cow">
               </div>
         </div>
         <div  class="about">
             <h1><i class="fa-solid fa-gears"></i>What we used?</h1>
             <p>The platform uses machine learning algorithms on various Indian buffalo and cattle datasets. It inspects images, regardless of the conditions, to provide the probable breed. Outputs are validated against a breed repository and may be interfaced with the Breed Population Analytics (BPA) system for on-time registration checking.</p>
             <div class="container">
-                <div class="icon"><img src="7019818.png" alt="img"></div>
-                <div class="icon">aibrain.png" alt="img"></div>
-                <div class="icon">cowicon.png" alt="img"></div>
+                <div class="icon"><img src="./static/7019818.png" alt="img"></div>
+                <div class="icon"><img src="./static/aibrain.png" alt="img"></div>
+                <div class="icon"><img src="./static/cowicon.png" alt="img"></div>
             </div>
         </div>
          
@@ -60,15 +71,17 @@
 </div>
  <p id="t">Or..</p>
   <form id="uploadForm">
-   
+   <label for="imageInput" class="custom-file-upload">
+  Choose File
+</label>
     <input type="file" id="imageInput" name="image" accept="image/*" >
     <br><br>
-    <img id="preview" src="" alt="Image Preview" style="min-width: 700px; max-width:700px; display: none; border-radius: 10px; margin-top: 1rem;">
+    <img id="preview" src="" alt="Image Preview" >
     <br>
-    <button type="submit" id="uploadBtn">Upload & Predict</button>
+    <button type="submit" class="btn">Upload & Predict</button>
   </form></div>
   <div id="result">
-    <div class="table-container">
+   
       <table id="result-tab">
         <thead>
             <tr>
@@ -88,13 +101,13 @@
         <tbody>
 
         </tbody>
-      </table></div>
+      </table>
   </div>
 </section>
 
 <footer class="concl">
     <p>Made with Love❤️</p>
 </footer>
-<script src="script.js"></script>
+<script src="../static/script.js"></script>
 </body>
 </html>

@@ -2,7 +2,26 @@ const input = document.getElementById("imageInput");
 const preview = document.getElementById("preview");
 const dropArea = document.getElementById("dropArea");
 const resultDiv = document.getElementById("result");
-const uploadBtn = document.getElementById("uploadBtn"); // your button
+const uploadBtn = document.querySelector(".btn"); // your button
+const toggle= document.querySelector("#toggle");
+const img=document.querySelector("#icon");
+const body=document.body;
+toggle.addEventListener("click",(e)=>{
+  let  ismoved= toggle.classList.toggle('move');
+ 
+    if(ismoved){
+          img.src='./static/moon.png';
+          let isDark=body.classList.add('Dark_mode');
+          uploadBtn.classList.add('uploadBtn');
+
+          
+    }else{
+          img.src='./static/sun.png';
+          body.classList.remove('Dark_mode');
+          uploadBtn.classList.remove('uploadBtn');
+    }
+  
+})
 
 dropArea.addEventListener("dragover", (e) => {
     e.preventDefault();
