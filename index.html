@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriCognize</title>
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymo<i class="fa-solid fa-check" style="color: #15b227;"></i>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="image-container">
+                <img id="img1"src="images.jpg" alt="cow">
+                <div class="text-overlay"> Cattle & Buffalo Breed Identification App</div>
+                <div  class="txt">AI application for instant and  real-time identification of cattle breeds on the get go.</div>
+            </div>
+        </div>
+
+    </header>
+    <div class="intro">
+        <div class="about">
+              <h1><i class="fa-solid fa-lightbulb"></i>Introduction</h1>
+              <p>Empowering farmers to make informed breeding decisions. Our platform simplifies livestock management with real-time insights. Discover smarter ways to enhance productivity every day.</p>
+              <div class="img">
+                <img src="cow1.jpg" alt="cow">
+              </div>
+        </div>
+        <div  class="about">
+            <h1><i class="fa-solid fa-gears"></i>What we used?</h1>
+            <p>The platform uses machine learning algorithms on various Indian buffalo and cattle datasets. It inspects images, regardless of the conditions, to provide the probable breed. Outputs are validated against a breed repository and may be interfaced with the Breed Population Analytics (BPA) system for on-time registration checking.</p>
+            <div class="container">
+                <div class="icon"><img src="7019818.png" alt="img"></div>
+                <div class="icon">aibrain.png" alt="img"></div>
+                <div class="icon">cowicon.png" alt="img"></div>
+            </div>
+        </div>
+         
+        <div class="about">
+    <strong><h1>Benefits of our site  <i class="fa-solid fa-handshake-angle"></i></h1></strong>
+    <ul id="bf">
+        <li><i class="fa-solid fa-check" style="color: #15b227;"></i>Quickly tells you the breed of your cattle or buffalo with just a photo.</li>
+        <li><i class="fa-solid fa-check" style="color: #15b227;"></i>Saves your time and makes farming easier.</li>
+        <li><i class="fa-solid fa-check" style="color: #15b227;"></i>Gives you useful information about each breed instantly.</li>
+        <li><i class="fa-solid fa-check" style="color: #15b227;"></i>Simple and easy to use for everyone.</li>
+
+
+    </ul></div>
+
+    </div>
+   
+    <section class="upload-section">
+      <h2>Try it out....</h2></h1>
+  <div class="space">
+      <h2>Upload Image</h2>
+      <div id="dropArea">
+  Drag & Drop image here
+</div>
+ <p id="t">Or..</p>
+  <form id="uploadForm">
+   
+    <input type="file" id="imageInput" name="image" accept="image/*" >
+    <br><br>
+    <img id="preview" src="" alt="Image Preview" style="min-width: 700px; max-width:700px; display: none; border-radius: 10px; margin-top: 1rem;">
+    <br>
+    <button type="submit" id="uploadBtn">Upload & Predict</button>
+  </form></div>
+  <div id="result">
+    <div class="table-container">
+      <table id="result-tab">
+        <thead>
+            <tr>
+                <th>
+                <strong>Breed</strong>
+            </th>
+            <th>
+                <strong>Probability:</strong>
+            </th>
+                 <th>
+                
+                    <strong>info</strong>
+                 </th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+      </table></div>
+  </div>
+</section>
+
+<footer class="concl">
+    <p>Made with Love❤️</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
