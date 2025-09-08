@@ -10,7 +10,7 @@ toggle.addEventListener("click",(e)=>{
   let  ismoved= toggle.classList.toggle('move');
  
     if(ismoved){
-          img.src='./static/moon.png';
+          img.src='moon.png';
           let isDark=body.classList.add('Dark_mode');
           uploadBtn.classList.add('uploadBtn');
 
