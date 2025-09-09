@@ -16,7 +16,7 @@ toggle.addEventListener("click",(e)=>{
 
           
     }else{
-          img.src='./static/sun.png';
+          img.src='sun.png';
           body.classList.remove('Dark_mode');
           uploadBtn.classList.remove('uploadBtn');
     }
